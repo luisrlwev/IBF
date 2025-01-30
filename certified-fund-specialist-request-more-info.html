@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section style="
+        background-image: url('https://icfs.com/sites/default/files/main-certified-fund-specialist.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        ">
+        <div class="container mx-auto relative" style="height: 600px;">
+            <div class="absolute bottom-40">
+                <h1 class="text-white text-5xl pb-3">Certified Fund Specialist</h1>
+                <p class="text-white pb-8">Distinguish yourself with your education.</p>
+                <select title="Select Program" class="w-full text-white bg-sky-700 p-3 text-lg font-semibold"
+                    onchange="window.location.href=this.value">
+                    <option value="certified-fund-specialist" class="text-sm">Overview</option>
+                    <option value="certified-fund-specialist-goals" class="text-sm">Goals</option>
+                    <option value="certified-fund-specialist-continuing-education" class="text-sm">Continuing Education
+                    </option>
+                    <option value="certified-fund-specialist-pricing" class="text-sm">Pricing</option>
+                    <option value="certified-fund-specialist-faqs" class="text-sm" selected>FAQ's</option>
+                    <option value="certified-fund-specialist-request-more-info" class="text-sm">Request More Info
+                    </option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="py-20">
+        <div class="container mx-auto grid grid-cols-12">
+            <div class="col-span-8">
+                <h2 class="text-3xl pb-3">Frequently Asked Questions</h2>
+                <!-- Pregunta 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(1)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">What makes IBF’s CFS® designation relevant to my practice?</span>
+                        <svg id="arrow-1" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-1" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            One-third of all Americans own shares of a mutual fund. Our CFS® training gives you expertise in funds and related topics. You’ll serve your existing clients better and attract new ones looking for specialist-level guidance in this area.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(2)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">How long does the course take?</span>
+                        <svg id="arrow-2" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-2" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            Working remotely at your own pace—and at times that suit you best—you should be able to complete your CFS® designation in approximately 15 weeks. You are given one year to complete the course once you enroll.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(3)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">How is the course structured?</span>
+                        <svg id="arrow-3" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-3" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            Our CFS® curriculum is distributed across two easily digestible modules. Readings and practice questions prepare you for proctored online exams and the case study helps to demonstrate your growing mastery of topics and tools.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(4)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">Is IBF’s CFS® designation recognized in the industry?</span>
+                        <svg id="arrow-4" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-4" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            Yes. Our program is recognized by the California Board of Accounting, the Certified Financial Planner® (CFP®) Board, the National Association of Personal Financial Advisors, and American College’s Professional Achievement in Continuing Education (PACE), Financial Industry Regulatory Authority (FINRA) as well as almost all of the leading Broker Dealers in the country.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(5)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">How many CE credits will I earn?</span>
+                        <svg id="arrow-5" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-5" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            All IBF programs qualify for CE credit required by the CFP Board and the American College’s PACE program. IBF designations also satisfy the CE requirements of the securities industry. <a href="./certified-fund-specialist-continuing-education" class="text-sky-600 hover:text-sky-800">Review our interactive map to see how many CE credits you can get in your state.</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-span-4 px-14">
+                <h5 class="font-semibold pb-3 border-b-2 border-black">Next Steps</h5>
+                <p class="text-sm pt-4 pb-12">View our Course Catalog for an easy guide to all of the programs offered.
+                </p>
+                <a href="https://ibf.secure.force.com/enroll/sinadinoSiteEnrollPage" target="_blank"
+                    class="flex justify-between items-center uppercase text-white p-4 mb-4 bg-emerald-500 hover:bg-black w-full text-base font-semibold">Enroll
+                    Online <span class="p-1 bg-emerald-400"><i class="fa-solid fa-angles-right"></i></span></a>
+                <a href="https://icfs.com/contact/request-information" target="_blank"
+                    class="flex justify-between items-center uppercase text-white p-4 bg-emerald-500 hover:bg-black w-full text-base font-semibold">Request
+                    More
+                    Info <span class="p-1 bg-emerald-400"><i class="fa-solid fa-circle-info"></i></span></a>
+                <div>
+                    <div class="py-6 text-center border-2 mt-8 px-8">
+                        <p class="pb-3 text-slate-400 italic text-base">Start your education for free.</p>
+                        <p class="text-3xl uppercase pb-10">Register for mutual funds mini course</p>
+                        <!-- Formulario Liquid -->
+                        <form method="post" action="{{%20routes.contact%20}}" accept-charset="UTF-8"
+                            class="contact-form grid text-start text-base">
+                            <input type="hidden" name="form_type" value="contact">
+                            <input type="hidden" name="utf8" value="✓">
+
+                            <label for="ContactFormName" class="pb-1">Full Name <span
+                                    class="text-red-700">*</span></label>
+                            <input type="text" class="border-2 mb-4" name="contact[name]" id="ContactFormName" required>
+
+                            <label for="ContactFormEmail" class="pb-1">Email <span class="text-red-700">*</span></label>
+                            <input type="email" class="border-2 mb-4" name="contact[email]" id="ContactFormEmail"
+                                required>
+
+                            <label for="ContactFormPhone" class="pb-1">Phone <span class="text-red-700">*</span></label>
+                            <input type="tel" class="border-2 mb-4" name="contact[phone]" id="ContactFormPhone"
+                                pattern="[0-9]{10}" required>
+
+                            <button type="submit" class="text-white bg-emerald-500 hover:bg-black py-3 mb-3">Register
+                                Now</button>
+                            <p class="text-center text-sm italic text-slate-400">If you would like to speak with an
+                                enrollment advisor, please call us at (800) 848-2029.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-emerald-500">
+        <div class="container mx-auto grid grid-cols-3 py-12">
+            <div class="col-span-2">
+                <p class="text-3xl text-white">For Advisors by Advisors. Browse all Programs.</p>
+            </div>
+            <div class="col-span-1">
+                <select title="Select Program"
+                    class="w-full text-white bg-emerald-700 p-3 text-lg uppercase font-semibold"
+                    onchange="window.location.href=this.value">
+                    <option class="text-sm">Select Program</option>
+                    <option value="certified-fund-specialist" class="text-sm">Certified Fund Specialist</option>
+                    <option value="certified-annuity-specialist" class="text-sm">Certified Annuity Specialist</option>
+                    <option value="certified-estate-and-trust-specialist" class="text-sm">Certified Estate and Trust
+                        Specialist</option>
+                    <option value="certified-tax-specialist" class="text-sm">Certified Tax Specialist</option>
+                    <option value="certified-income-specialist" class="text-sm">Certified Income Specialist</option>
+                    <option value="certified-divorce-financial-specialist" class="text-sm">Certified Divorce Financial
+                        Specialist</option>
+                    <option value="social-security-and-medicare" class="text-sm">Certified Social Security and Medicare
+                        Specialist</option>
+                    <option value="alternative-invest" class="text-sm">Alternative Investments</option>
+                    <option value="divorce" class="text-sm">Divorce</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(`answer-${id}`);
+            const arrow = document.getElementById(`arrow-${id}`);
+            answer.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+    </script>
+</body>
+
+</html>
