@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section style="
+        background-image: url('https://cdn.shopify.com/s/files/1/0623/8296/4942/files/main-why-ibf.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        ">
+        <div class="container mx-auto relative" style="height: 300px;">
+            <div class="absolute bottom-20">
+                <h1 class="text-white text-5xl pb-3">Membership FAQs</h1>
+                <p class="text-white pb-8">What you need to know when you need to know it.</p>
+            </div>
+        </div>
+    </section>
+    <section class="py-20">
+        <div class="container mx-auto grid grid-cols-12">
+            <div class="col-span-8">
+                <h4 class="text-2xl font-semibold pb-8">Membership FAQ</h4>
+                <!-- Pregunta 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(1)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">What does it cost to be a member of IBF?</span>
+                        <svg id="arrow-1" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-1" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            After you complete your designation, you can keep your IBF membership current with an annual fee of $125 for your first designation and $25 for each additional designation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(2)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">How will IBF membership help me stay current with industry trends?</span>
+                        <svg id="arrow-2" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-2" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            Your membership comes with free, annually updated IBF Reference Sheets that distill essential working knowledge into an actionable combination of graphs, charts, and infographics. You also receive free IBF Quarterly Updates that will save you hundreds of hours of research on emerging knowledge and practice.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(3)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">Will IBF membership help me grow my business?</span>
+                        <svg id="arrow-3" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-3" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            As an IBF member, you can list your practice with our “Find an Advisor” service so that new clients can connect with you based on your geographic location and areas of expertise.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(4)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">Are IBF’s designations recognized in the industry?</span>
+                        <svg id="arrow-4" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-4" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            Our programs are recognized by the California Board of Accounting, the Certified Financial Planner® (CFP®) Board, the National Association of Personal Financial Advisors, and American College’s Professional Achievement in Continuing Education (PACE).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(5)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">Does IBF membership include any industry perks?</span>
+                        <svg id="arrow-5" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-5" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            Membership entitles you to discounts on subscriptions to The Wall Street Journal and The Financial Times, as well as many others. Contact us for more information.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <button onclick="toggleAnswer(6)" class="w-full text-left flex justify-between items-center">
+                        <span class="font-semibold text-lg">How large is the IBF member network?</span>
+                        <svg id="arrow-6" class="w-6 h-6 transform transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="answer-6" class="mt-4 hidden">
+                        <p class="text-gray-600">
+                            The IBF network includes 3,500+ like-minded financial services professionals. Members use our social media platforms to ask questions, share best practices, and stay in touch with classmates, alumni, and IBF faculty and staff members.
+                        </p>
+                    </div>
+                </div>
+                <p class="text-lg pb-8">For more information, please click <a href="https://cdn.shopify.com/s/files/1/0623/8296/4942/files/Membership_Guide_2024_-_v1.0.pdf" target="_blank" class="text-lg text-sky-600 hover:text-sky-800">here</a>.</p>
+            </div>
+            <div class="col-span-4 px-14">
+                <a href="./why-ibf" class="flex items-center gap-2 text-black p-2 mb-4 bg-gray-200 hover:bg-emerald-500 hover:text-white w-full text-base font-semibold"><i class="fa-solid fa-right-long"></i> Overview</a>
+                <a href="./membership-benefits-why-ibf" class="flex items-center gap-2 text-black p-2 mb-4 bg-gray-200 hover:bg-emerald-500 hover:text-white w-full text-base font-semibold"><i class="fa-solid fa-right-long"></i> Membership Benefits</a>
+                <a href="./quarterly-updates-why-ibf" class="flex items-center gap-2 text-black p-2 mb-4 bg-gray-200 hover:bg-emerald-500 hover:text-white w-full text-base font-semibold"><i class="fa-solid fa-right-long"></i> Quartely Updates</a>
+                <a href="./student-services-why-ibf" class="flex items-center gap-2 text-black p-2 mb-4 bg-gray-200 hover:bg-emerald-500 hover:text-white w-full text-base font-semibold"><i class="fa-solid fa-right-long"></i> Student Services</a>
+                <a href="./membership-faq-why-ibf" class="flex items-center gap-2 text-white p-2 mb-4 bg-emerald-500 hover:bg-black w-full text-base font-semibold"><i class="fa-solid fa-right-long"></i> Membership FAQ</a>
+                <a href="./testimonials-why-ibf" class="flex items-center gap-2 text-black p-2 mb-4 bg-gray-200 hover:bg-emerald-500 hover:text-white w-full text-base font-semibold"><i class="fa-solid fa-right-long"></i> Testimonials</a>
+                <a href="https://www.ibfportal.com/" target="_blank" class="flex items-center gap-2 text-black p-2 mb-4 bg-gray-200 hover:bg-emerald-500 hover:text-white w-full text-base font-semibold"><i class="fa-solid fa-right-long"></i> Current Members Renew Online</a>
+                <a href="./mission-objectives-why-ibf" class="flex items-center gap-2 text-black p-2 mb-4 bg-gray-200 hover:bg-emerald-500 hover:text-white w-full text-base font-semibold"><i class="fa-solid fa-right-long"></i> Mission & Objectives</a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-emerald-500">
+        <div class="container mx-auto grid grid-cols-3 py-12">
+            <div class="col-span-2">
+                <p class="text-3xl text-white">For Advisors by Advisors. Browse all Programs.</p>
+            </div>
+            <div class="col-span-1">
+                <select title="Select Program" class="w-full text-white bg-emerald-700 p-3 text-lg uppercase font-semibold" onchange="window.location.href=this.value">
+                    <option class="text-sm">Select Program</option>
+                    <option value="certified-fund-specialist" class="text-sm">Certified Fund Specialist</option>
+                    <option value="certified-annuity-specialist" class="text-sm">Certified Annuity Specialist</option>
+                    <option value="certified-estate-and-trust-specialist" class="text-sm">Certified Estate and Trust Specialist</option>
+                    <option value="certified-tax-specialist" class="text-sm">Certified Tax Specialist</option>
+                    <option value="certified-income-specialist" class="text-sm">Certified Income Specialist</option>
+                    <option value="certified-divorce-financial-specialist" class="text-sm">Certified Divorce Financial Specialist</option>
+                    <option value="social-security-and-medicare" class="text-sm">Certified Social Security and Medicare Specialist</option>
+                    <option value="alternative-invest" class="text-sm">Alternative Investments</option>
+                    <option value="divorce" class="text-sm">Divorce</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(`answer-${id}`);
+            const arrow = document.getElementById(`arrow-${id}`);
+            answer.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+    </script>
+</body>
+
+</html>
